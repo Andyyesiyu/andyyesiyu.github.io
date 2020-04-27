@@ -1,9 +1,54 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <title>This is the title of the webpage!</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <title>How to evaluate the turnaround point for COVID-19</title>
+    <meta property="og:title" content="How to evaluate the turnaround point for COVID-19" />
+    <meta charset="utf-8" />
+    <meta property="og:type" content="article" />
+
+    <meta property="og:description" content="Visualization Final Project" />
+    <meta property="description" content="Visualization Final Project" />
+
+    <link rel="stylesheet" href="static/idyll_styles.css" />
   </head>
   <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+    <div id="idyll-mount"><div data-reactroot=""><div class="idyll-root"><div class=" idyll-text-container"></div><div class="article-header" style="background:#222222;color:#ffffff"><h1 class="hed">How to evaluate the turnaround point for COVID-19</h1><h2 class="dek">Visualization Explanation</h2><div class="byline">By: <a href="https://github.com/Andyyesiyu">Siyu Ye</a></div><div class="idyll-pub-date">Mon Apr 27 2020</div></div><div class=" idyll-text-container"><h1 id="introduction">Introduction</h1><p>The coronavirus has continued to influence human beings. People also take plenty of measures like lockdown and travel restrictions 
+to fight against this transparent enemy. 
+But what effect of these measures and are them enough? What’s the step are we located in the whole process? 
+Are we winning or losing? Are we below the turnaround point? 
+This is the topic we will cover today.</p><h1 id="the-overall-trending-of-covid-19">The overall trending of COVID-<!-- -->1<!-- -->9</h1><p>There are many researches regarding the pandemic trending, which shows that it follows an exponentially increasing curve. 
+The exponential function arises at a rate proportional to its current value. 
+So the value will reach a incredible growth rate in a short period of time.
+The COVID-19 also follows the exponential function and here I show the current accumulated confirmed cases of 
+each country since they reach the first 100 cases.</p></div><img class="overall" src="static/images/overall_split.png"/><div class=" idyll-text-container"><p>This graph use the log scale as the y axes. We can see that the number double compared to the previous one through the whole range.
+As the scale is different with the familiar one for human beings, 
+There is a joke said that <strong>the hardest thing for human being is to understand the exponential function.</strong> 
+This also shapes the reason why it’s hard to predict the exponential trend and find the turnaround point.
+I will give a detailed explanation below.</p><div id="desmos-0" style="height:400px"></div></div><div class="idyll-scroll" id="idyll-scroll-0" style="position:relative"><div class="idyll-scroll-graphic" style="height:100vh;top:0;left:0;right:0;bottom:auto;width:100%;transform:translate3d(0, 0, 0);z-index:-1"><div style="width:0;position:absolute;left:0;right:0;top:50%;transform:translateY(-50%)"><div class="d3-component-container"><img class="overall" src="static/images/logconfuse.png" idyll="[object Object]"/></div><div class="d3-component-container"><img class="overall" src="static/images/logtrending.png" idyll="[object Object]"/></div></div></div><div class=" idyll-text-container"><div class="idyll-scroll-text"><div class="idyll-step "><h1 id="hard-to-predict-the-end?">Hard to predict the End?</h1><p>Followed by the previous topic, why it is hard to predict the turnaround point of the exponential trend? 
+    First we must know where is the turnaround point for an exponential curve. After the “exponential explosion”, the growth rate
+    will reach a plateau. This is the turnaround point. 
+    But because, the overall trending is pretty the same among the growth phase. 
+    According to the right graph, we can see that the length of the exponential function is hard to predict when we in the middle. 
+    It seems impossible to judge how long we still need to go. 
+    But this turnaround point is important because the final result will be several times the quantity of the others.
+    By predicting the turnaround point, we can better recognize the current situation and decide whether we should more focus on the 
+    economic side or tight the restrictions.</p><em>Graph Created By <a href="https://www.youtube.com/watch?v=54XLXg4fYsc">minutephysics</a></em></div><div class="idyll-step "><h2 id="but-we-can-try-our-best!">But we can try our best<!-- -->!</h2><p>After reviewing some researches, I have found that by using some models and unpopular ways, we can some how predict 
+    the turnaround point. At least we can do better visualizations compared to the ordinary one. Here are some main points:</p><h3 id="1.-use-logarithmic-scale">1<!-- -->. Use Logarithmic Scale</h3><p>As we talked before, the logarithmic function is the reverse calculation for exponential function. By using the log scale,
+    we can model countries of huge different case difference. We already showed a divided graph of each countries because they
+    are hard to compare in ordinary linear scale. After we edit to the log scale, the situation is difference. Even these countries
+    differ a lot in case numbers, we can still compare them together. 
+      <img src="static/images/overall.png" alt="quill"/></p><h3 id="2.-focus-on-change">2<!-- -->. Focus on Change</h3><p>As we talked before it is hard to find the turnaround point in exponential function based on the existed number. But in 
+    math area, there is an weapon called <em>Derivative</em>, which can focus on the sensitivity to change of a function. To make it simple, if we 
+    we can better identify the trend if we compare the growth rate. In the context of COVID-19, the new case number is a good indicator. </p><h3 id="3.-plot-based-on-other-index">3<!-- -->. Plot based on other Index</h3><p>We typically evaluate the trend based on time. The plot would be the case numbers versus the time.
+    But if we break this limitation, the plot could contain more valuable things. If we don’t care about the date, but only
+    focus on the current situation, we can trow away the date. Then we use the plot with the new case number versus the existed cases.
+    The miracle will happen, as the definition of exponential function, the plot will appear as a straight line.
+      <img src="static/images/existGrowth.png" alt="quill"/><em>Graph Created By <a href="https://www.youtube.com/watch?v=54XLXg4fYsc">minutephysics</a></em></p></div></div></div></div><div class=" idyll-text-container"><br/><h1 id="final-visualization-dashboard">Final Visualization Dashboard</h1><p>I have set up a Visualization dashboard here, which could link to <a href="http://34.68.118.241:8866/">a python backend</a> made all by myself.
+Feel free to click it, I know the IP address may seem little bit horrible.</p></div></div></div></div>
+    <script src="static/idyll_index.js"></script>
   </body>
 </html>
